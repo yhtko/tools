@@ -293,6 +293,11 @@ button, input, select {
   color: #fff;
 }
 
+.launch-orange {
+  background: #d97706;
+  color: #fff;
+}
+
 .launch-arrow {
   font-size: 16px;
   line-height: 1;
