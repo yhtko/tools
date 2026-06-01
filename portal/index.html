@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factory Tools — 工場管理ツール集</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-icon">⚙</span>
+        <span class="brand-text">Factory<br><small>Tools</small></span>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-section-label">ツール</div>
+        <a href="#layout" class="nav-item active" data-section="layout">
+          <span class="nav-icon">🏭</span>工場レイアウト
+        </a>
+        <a href="#inspection" class="nav-item" data-section="inspection">
+          <span class="nav-icon">📐</span>検査図面
+        </a>
+        <a href="#calc" class="nav-item" data-section="calc">
+          <span class="nav-icon">🔢</span>計算ツール
+        </a>
+
+        <div class="nav-section-label" style="margin-top: 20px;">計算カテゴリ</div>
+        <a href="#calc-takt" class="nav-item nav-sub" data-section="calc">
+          <span class="nav-icon">⏱</span>タクトタイム
+        </a>
+        <a href="#calc-capacity" class="nav-item nav-sub" data-section="calc">
+          <span class="nav-icon">📊</span>生産能力
+        </a>
+        <a href="#calc-area" class="nav-item nav-sub" data-section="calc">
+          <span class="nav-icon">📏</span>面積・寸法
+        </a>
+        <a href="#calc-weight" class="nav-item nav-sub" data-section="calc">
+          <span class="nav-icon">⚖</span>荷重・重量
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="version-badge">v1.0.0</div>
+      </div>
+    </aside>
+
+    <!-- Main workspace -->
+    <main class="workspace">
+
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="topbar-title" id="topbar-title">工場レイアウト作成ツール</div>
+        <div class="topbar-actions">
+          <button class="topbar-btn" title="ヘルプ">?</button>
+        </div>
+      </header>
+
+      <!-- Content area -->
+      <div class="content">
+
+        <!-- ========== SECTION: layout ========== -->
+        <section class="tool-section active" id="section-layout">
+          <div class="hero-card">
+            <div class="hero-badge" style="background:#dbeafe; color:#1d4ed8;">🏭 工場レイアウト</div>
+            <h1 class="hero-title">工場レイアウト作成ツール</h1>
+            <p class="hero-desc">設備・通路・安全エリアを2D/3Dで配置し、現場レイアウトを視覚化します。ドラッグ＆ドロップで直感的に操作できます。</p>
+            <a href="../swimlane-flowchart/index.html" class="launch-btn launch-blue">
+              <span>ツールを開く</span>
+              <span class="launch-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#dbeafe; color:#2563eb;">2D</div>
+              <div class="feature-body">
+                <strong>2Dレイアウト編集</strong>
+                <p>グリッドスナップ付きのドラッグ＆ドロップで設備を配置。ズーム・パンで広い工場も快適に編集できます。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#dcfce7; color:#16a34a;">3D</div>
+              <div class="feature-body">
+                <strong>3Dプレビュー</strong>
+                <p>Three.jsによるリアルタイム3Dビュー。歩行視点・プレゼンモードでステークホルダーへの説明に活用できます。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#fef9c3; color:#ca8a04;">📦</div>
+              <div class="feature-body">
+                <strong>35種類以上のテンプレート</strong>
+                <p>マシニングセンタ・コンベア・安全柵など、工場でよく使う設備テンプレートを即座に配置できます。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#ede9fe; color:#7c3aed;">💾</div>
+              <div class="feature-body">
+                <strong>JSON / PNG 出力</strong>
+                <p>レイアウトをJSONで保存・読み込み。PNG形式でエクスポートして図面資料として活用できます。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== SECTION: inspection ========== -->
+        <section class="tool-section" id="section-inspection">
+          <div class="hero-card">
+            <div class="hero-badge" style="background:#dcfce7; color:#16a34a;">📐 検査図面</div>
+            <h1 class="hero-title">検査図面作成ツール</h1>
+            <p class="hero-desc">検査基準・測定箇所を図面上に記入し、検査指示書・チェックシートを作成します。</p>
+            <button class="launch-btn launch-green" disabled>
+              <span>準備中</span>
+            </button>
+          </div>
+
+          <div class="coming-soon-wrap">
+            <div class="coming-soon-icon">🚧</div>
+            <h2 class="coming-soon-title">開発中</h2>
+            <p class="coming-soon-desc">検査図面作成ツールは現在開発中です。近日公開予定です。</p>
+            <div class="planned-features">
+              <div class="planned-item"><span class="check">✓</span> 図面PDFのインポート・表示</div>
+              <div class="planned-item"><span class="check">✓</span> 測定箇所へのコメント・寸法記入</div>
+              <div class="planned-item"><span class="check">✓</span> 検査チェックシートの自動生成</div>
+              <div class="planned-item"><span class="check">✓</span> 合否判定マーカー</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== SECTION: calc ========== -->
+        <section class="tool-section" id="section-calc">
+          <div class="hero-card">
+            <div class="hero-badge" style="background:#fef3c7; color:#d97706;">🔢 計算ツール</div>
+            <h1 class="hero-title">各所計算ツール</h1>
+            <p class="hero-desc">タクトタイム・生産能力・面積・荷重など、工場現場でよく使う計算をすばやく実行できます。</p>
+          </div>
+
+          <!-- Takt Time -->
+          <div class="calc-block" id="calc-takt">
+            <div class="calc-header">
+              <div class="calc-icon" style="background:#dbeafe; color:#2563eb;">⏱</div>
+              <div>
+                <div class="calc-title">タクトタイム計算</div>
+                <div class="calc-subtitle">1個あたりの生産に許される時間</div>
+              </div>
+            </div>
+            <div class="calc-fields">
+              <label>稼働時間 (分)
+                <input type="number" id="takt-time" value="480" min="1" step="1" />
+              </label>
+              <label>必要生産数 (個)
+                <input type="number" id="takt-qty" value="240" min="1" step="1" />
+              </label>
+              <label>稼働率 (%)
+                <input type="number" id="takt-eff" value="85" min="1" max="100" step="1" />
+              </label>
+            </div>
+            <button class="calc-btn" onclick="calcTakt()">計算する</button>
+            <div class="calc-result" id="takt-result"></div>
+          </div>
+
+          <!-- Production Capacity -->
+          <div class="calc-block" id="calc-capacity">
+            <div class="calc-header">
+              <div class="calc-icon" style="background:#dcfce7; color:#16a34a;">📊</div>
+              <div>
+                <div class="calc-title">生産能力計算</div>
+                <div class="calc-subtitle">1日の最大生産可能数</div>
+              </div>
+            </div>
+            <div class="calc-fields">
+              <label>1個あたりのサイクルタイム (秒)
+                <input type="number" id="cap-cycle" value="90" min="1" step="1" />
+              </label>
+              <label>稼働時間 (時間)
+                <input type="number" id="cap-hours" value="8" min="1" step="0.5" />
+              </label>
+              <label>設備数
+                <input type="number" id="cap-machines" value="1" min="1" step="1" />
+              </label>
+              <label>稼働率 (%)
+                <input type="number" id="cap-eff" value="85" min="1" max="100" step="1" />
+              </label>
+            </div>
+            <button class="calc-btn" onclick="calcCapacity()">計算する</button>
+            <div class="calc-result" id="cap-result"></div>
+          </div>
+
+          <!-- Area Calc -->
+          <div class="calc-block" id="calc-area">
+            <div class="calc-header">
+              <div class="calc-icon" style="background:#fef9c3; color:#ca8a04;">📏</div>
+              <div>
+                <div class="calc-title">面積・寸法計算</div>
+                <div class="calc-subtitle">設備占有面積・通路幅・床面積</div>
+              </div>
+            </div>
+            <div class="calc-fields">
+              <label>幅 (m)
+                <input type="number" id="area-w" value="30" min="0.1" step="0.1" />
+              </label>
+              <label>奥行 (m)
+                <input type="number" id="area-d" value="20" min="0.1" step="0.1" />
+              </label>
+              <label>通路幅を除く割合 (%)
+                <input type="number" id="area-aisle" value="20" min="0" max="80" step="1" />
+              </label>
+            </div>
+            <button class="calc-btn" onclick="calcArea()">計算する</button>
+            <div class="calc-result" id="area-result"></div>
+          </div>
+
+          <!-- Weight / Load -->
+          <div class="calc-block" id="calc-weight">
+            <div class="calc-header">
+              <div class="calc-icon" style="background:#fce7f3; color:#be185d;">⚖</div>
+              <div>
+                <div class="calc-title">荷重・重量計算</div>
+                <div class="calc-subtitle">床面積荷重・フォークリフト荷重換算</div>
+              </div>
+            </div>
+            <div class="calc-fields">
+              <label>設備重量 (kg)
+                <input type="number" id="wt-kg" value="5000" min="1" step="10" />
+              </label>
+              <label>設置面積 (m²)
+                <input type="number" id="wt-area" value="4" min="0.1" step="0.1" />
+              </label>
+              <label>安全率
+                <input type="number" id="wt-sf" value="1.5" min="1" step="0.1" />
+              </label>
+            </div>
+            <button class="calc-btn" onclick="calcWeight()">計算する</button>
+            <div class="calc-result" id="wt-result"></div>
+          </div>
+        </section>
+
+      </div><!-- /.content -->
+    </main>
+  </div><!-- /.shell -->
+
+  <script src="app.js"></script>
+</body>
+</html>
