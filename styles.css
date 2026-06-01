@@ -352,6 +352,25 @@ button, input, select {
 }
 
 /* ===================================================
+   Screenshot
+   =================================================== */
+
+.screenshot-wrap {
+  margin-bottom: 20px;
+  border: 1px solid #d7dee9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.10);
+  background: #f8fafc;
+}
+
+.screenshot-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ===================================================
    Responsive
    =================================================== */
 
