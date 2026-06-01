@@ -355,6 +355,13 @@ button, input, select {
    Screenshot
    =================================================== */
 
+.screenshot-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
 .screenshot-wrap {
   margin-bottom: 20px;
   border: 1px solid #d7dee9;
@@ -362,6 +369,10 @@ button, input, select {
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(15, 23, 42, 0.10);
   background: #f8fafc;
+}
+
+.screenshot-row .screenshot-wrap {
+  margin-bottom: 0;
 }
 
 .screenshot-img {
@@ -393,6 +404,10 @@ button, input, select {
 
   .content {
     padding: 20px 16px;
+  }
+
+  .screenshot-row {
+    grid-template-columns: 1fr;
   }
 
   .feature-grid {
