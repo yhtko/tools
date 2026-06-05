@@ -298,6 +298,11 @@ button, input, select {
   color: #fff;
 }
 
+.launch-purple {
+  background: #7c3aed;
+  color: #fff;
+}
+
 .launch-arrow {
   font-size: 16px;
   line-height: 1;

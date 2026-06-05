@@ -7,6 +7,7 @@ const sectionTitles = {
   layout:     "工場レイアウト作成ツール",
   inspection: "PDF検査マーカー",
   calc:       "ForgeKit — 工場計算ツール集",
+  st:         "ST Designer — 標準作業時間設計ツール",
 };
 
 function activateSection(id) {
