@@ -205,6 +205,22 @@ button, input, select {
   background: #f1f5f9;
 }
 
+.lang-select {
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #c7d0df;
+  border-radius: 6px;
+  background: #fff;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lang-select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
 /* Content */
 .content {
   padding: 28px 32px;
