@@ -319,6 +319,11 @@ button, input, select {
   color: #fff;
 }
 
+.launch-pink {
+  background: #be185d;
+  color: #fff;
+}
+
 .launch-arrow {
   font-size: 16px;
   line-height: 1;

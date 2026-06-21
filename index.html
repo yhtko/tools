@@ -31,6 +31,9 @@
         <a href="#st" class="nav-item" data-section="st">
           <span class="nav-icon">⏱</span><span data-i18n="navSt">標準時間設計</span>
         </a>
+        <a href="#bg" class="nav-item" data-section="bg">
+          <span class="nav-icon">🖼️</span><span data-i18n="navBg">背景除去</span>
+        </a>
       </nav>
 
       <div class="sidebar-footer">
@@ -287,6 +290,64 @@
               <div class="feature-body">
                 <strong data-i18n="f_st_export">JSON保存・CSV ZIP出力</strong>
                 <p data-i18n="f_st_export_d">工程データをJSONで保存・読み込み。要素一覧・集計・ガントチャートをCSV ZIPでエクスポートして報告書に活用できます。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== SECTION: bg ========== -->
+        <section class="tool-section" id="section-bg">
+          <div class="hero-card">
+            <div class="hero-badge" style="background:#fce7f3; color:#be185d;" data-i18n="badgeBg">🖼️ 背景除去</div>
+            <h1 class="hero-title" data-i18n="titleBg">Product Photo Cleaner — 背景除去ツール</h1>
+            <p class="hero-desc" data-i18n="descBg">画像をサーバーへ送らず、ブラウザ内で背景除去とマスク修正を行います。AIモデルが自動で被写体を切り抜き、透過PNG・白背景・黒背景・グレーで出力できます。</p>
+            <a href="https://yhtko.github.io/background-remover/" class="launch-btn launch-pink" target="_blank" rel="noopener" data-tool="bg">
+              <span data-i18n="openTool">ツールを開く</span>
+              <span class="launch-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#fce7f3; color:#be185d;">🤖</div>
+              <div class="feature-body">
+                <strong data-i18n="f_bg_ai">AIによる自動背景除去</strong>
+                <p data-i18n="f_bg_ai_d">@imgly/background-removal モデルをブラウザ内で実行。画像データは一切サーバーへ送信せず、完全ローカルで処理します。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#ede9fe; color:#7c3aed;">✏️</div>
+              <div class="feature-body">
+                <strong data-i18n="f_bg_mask">マスク手動修正</strong>
+                <p data-i18n="f_bg_mask_d">ポリゴンで囲んで前景・背景を追加／削除。島（連続領域）単位でのワンクリック切替にも対応しています。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#dcfce7; color:#16a34a;">🖼️</div>
+              <div class="feature-body">
+                <strong data-i18n="f_bg_export">4種類の背景で出力</strong>
+                <p data-i18n="f_bg_export_d">透過PNG・白背景・黒背景・検査グレーの4種から選んでコピーまたは保存。ECサイト用途から品質検査資料まで対応します。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#dbeafe; color:#2563eb;">📋</div>
+              <div class="feature-body">
+                <strong data-i18n="f_bg_history">処理履歴の管理</strong>
+                <p data-i18n="f_bg_history_d">処理した画像を IndexedDB に自動保存。サムネイル一覧からワンクリックで再コピーまたはダウンロードできます。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#fef9c3; color:#ca8a04;">🔍</div>
+              <div class="feature-body">
+                <strong data-i18n="f_bg_view">3モードプレビュー</strong>
+                <p data-i18n="f_bg_view_d">元画像＋結果の比較表示・結果のみ・元画像の3モードを切り替えてマスクの精度を確認しながら編集できます。</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" style="background:#f1f5f9; color:#475569;">🌐</div>
+              <div class="feature-body">
+                <strong data-i18n="f_bg_i18n">多言語対応</strong>
+                <p data-i18n="f_bg_i18n_d">日本語・英語・タイ語・インドネシア語・中国語に対応。海外工場の商品撮影ラインでもそのまま使えます。</p>
               </div>
             </div>
           </div>

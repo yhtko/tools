@@ -71,6 +71,23 @@ const I18N = {
     f_st_group_d:'ドラッグ＆ドロップで要素を並び替え、関連動作をグループ化。UNDOにも対応しているので安心して編集できます。',
     f_st_export: 'JSON保存・CSV ZIP出力',
     f_st_export_d:'工程データをJSONで保存・読み込み。要素一覧・集計・ガントチャートをCSV ZIPでエクスポートして報告書に活用できます。',
+
+    navBg:        '背景除去',
+    titleBg:      'Product Photo Cleaner — 背景除去ツール',
+    badgeBg:      '🖼️ 背景除去',
+    descBg:       '画像をサーバーへ送らず、ブラウザ内で背景除去とマスク修正を行います。AIモデルが自動で被写体を切り抜き、透過PNG・白背景・黒背景・グレーで出力できます。',
+    f_bg_ai:      'AIによる自動背景除去',
+    f_bg_ai_d:    '@imgly/background-removal モデルをブラウザ内で実行。画像データは一切サーバーへ送信せず、完全ローカルで処理します。',
+    f_bg_mask:    'マスク手動修正',
+    f_bg_mask_d:  'ポリゴンで囲んで前景・背景を追加／削除。島（連続領域）単位でのワンクリック切替にも対応しています。',
+    f_bg_export:  '4種類の背景で出力',
+    f_bg_export_d:'透過PNG・白背景・黒背景・検査グレーの4種から選んでコピーまたは保存。ECサイト用途から品質検査資料まで対応します。',
+    f_bg_history: '処理履歴の管理',
+    f_bg_history_d:'処理した画像を IndexedDB に自動保存。サムネイル一覧からワンクリックで再コピーまたはダウンロードできます。',
+    f_bg_view:    '3モードプレビュー',
+    f_bg_view_d:  '元画像＋結果の比較表示・結果のみ・元画像の3モードを切り替えてマスクの精度を確認しながら編集できます。',
+    f_bg_i18n:    '多言語対応',
+    f_bg_i18n_d:  '日本語・英語・タイ語・インドネシア語・中国語に対応。海外工場の商品撮影ラインでもそのまま使えます。',
   },
 
   en: {
@@ -140,6 +157,23 @@ const I18N = {
     f_st_group_d:'Drag and drop to reorder elements and group related motions. Undo support lets you edit with confidence.',
     f_st_export: 'JSON save & CSV ZIP export',
     f_st_export_d:'Save and reload process data as JSON. Export element lists, summaries, and Gantt data as a CSV ZIP for reports.',
+
+    navBg:        'Background Removal',
+    titleBg:      'Product Photo Cleaner — Background Removal Tool',
+    badgeBg:      '🖼️ Background Removal',
+    descBg:       'Remove backgrounds and edit masks entirely in the browser — no server uploads. AI model runs locally to cut out subjects and export as transparent PNG, white, black, or gray background.',
+    f_bg_ai:      'AI-powered background removal',
+    f_bg_ai_d:    'Runs the @imgly/background-removal model locally in the browser. Image data is never sent to any server.',
+    f_bg_mask:    'Manual mask editing',
+    f_bg_mask_d:  'Draw polygons to add or remove foreground/background regions. One-click island toggle for connected regions.',
+    f_bg_export:  '4 background output options',
+    f_bg_export_d:'Choose from transparent PNG, white, black, or inspection gray — then copy or save. Works for e-commerce and quality inspection documents alike.',
+    f_bg_history: 'Processing history',
+    f_bg_history_d:'Processed images are auto-saved to IndexedDB. Re-copy or download any past result from the thumbnail list.',
+    f_bg_view:    '3-mode preview',
+    f_bg_view_d:  'Switch between compare (original + result), result only, and original modes to check mask accuracy while editing.',
+    f_bg_i18n:    'Multilingual support',
+    f_bg_i18n_d:  'Available in Japanese, English, Thai, Indonesian, and Chinese. Ready for product photography lines at overseas factories.',
   },
 
   th: {
@@ -182,6 +216,17 @@ const I18N = {
     f_st_gantt:'แผนภูมิ Gantt การเคลื่อนไหวต่อเนื่อง', f_st_gantt_d:'สร้างแผนภูมิ Gantt เพื่อแสดงแกนเวลา',
     f_st_group:'การจัดกลุ่ม เรียงลำดับ และ Undo', f_st_group_d:'ลากวางเพื่อเรียงลำดับและจัดกลุ่มการเคลื่อนไหว',
     f_st_export:'บันทึก JSON และส่งออก CSV ZIP', f_st_export_d:'บันทึกและโหลดข้อมูลกระบวนการเป็น JSON',
+
+    navBg:        'ลบพื้นหลัง',
+    titleBg:      'Product Photo Cleaner — เครื่องมือลบพื้นหลัง',
+    badgeBg:      '🖼️ ลบพื้นหลัง',
+    descBg:       'ลบพื้นหลังและแก้ไขมาสก์ทั้งหมดในเบราว์เซอร์ ไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ โมเดล AI ทำงานในเครื่องเพื่อตัดวัตถุและส่งออกเป็น PNG โปร่งใสหรือพื้นหลังสี',
+    f_bg_ai:'ลบพื้นหลังด้วย AI', f_bg_ai_d:'รันโมเดล @imgly/background-removal ในเบราว์เซอร์ ข้อมูลภาพไม่ถูกส่งไปยังเซิร์ฟเวอร์ใดๆ',
+    f_bg_mask:'แก้ไขมาสก์ด้วยตนเอง', f_bg_mask_d:'วาดรูปหลายเหลี่ยมเพื่อเพิ่มหรือลบพื้นที่ รองรับการสลับ Island ด้วยคลิกเดียว',
+    f_bg_export:'ตัวเลือกพื้นหลัง 4 แบบ', f_bg_export_d:'เลือก PNG โปร่งใส สีขาว สีดำ หรือสีเทา แล้วคัดลอกหรือบันทึก',
+    f_bg_history:'ประวัติการประมวลผล', f_bg_history_d:'ภาพที่ประมวลผลแล้วบันทึกอัตโนมัติใน IndexedDB คัดลอกหรือดาวน์โหลดได้จากรายการ',
+    f_bg_view:'ดูตัวอย่าง 3 โหมด', f_bg_view_d:'สลับระหว่างโหมดเปรียบเทียบ ผลลัพธ์เท่านั้น และต้นฉบับ',
+    f_bg_i18n:'รองรับหลายภาษา', f_bg_i18n_d:'ใช้งานได้ในภาษาญี่ปุ่น อังกฤษ ไทย อินโดนีเซีย และจีน',
   },
 
   id: {
@@ -224,6 +269,17 @@ const I18N = {
     f_st_gantt:'Bagan Gantt Gerakan Berkelanjutan', f_st_gantt_d:'Hasilkan bagan Gantt untuk memvisualisasikan sumbu waktu.',
     f_st_group:'Pengelompokan, pengurutan & undo', f_st_group_d:'Drag and drop untuk mengurutkan dan mengelompokkan gerakan.',
     f_st_export:'Simpan JSON & ekspor CSV ZIP', f_st_export_d:'Simpan dan muat ulang data proses sebagai JSON.',
+
+    navBg:        'Hapus Latar',
+    titleBg:      'Product Photo Cleaner — Alat Hapus Latar Belakang',
+    badgeBg:      '🖼️ Hapus Latar',
+    descBg:       'Hapus latar belakang dan edit mask sepenuhnya di browser tanpa upload ke server. Model AI berjalan lokal untuk memotong subjek dan mengekspor sebagai PNG transparan atau latar berwarna.',
+    f_bg_ai:'Hapus latar dengan AI', f_bg_ai_d:'Jalankan model @imgly/background-removal secara lokal. Data gambar tidak pernah dikirim ke server.',
+    f_bg_mask:'Edit mask manual', f_bg_mask_d:'Gambar poligon untuk menambah atau menghapus area. Mendukung toggle island dengan satu klik.',
+    f_bg_export:'4 pilihan latar belakang', f_bg_export_d:'Pilih PNG transparan, putih, hitam, atau abu-abu inspeksi lalu salin atau simpan.',
+    f_bg_history:'Riwayat pemrosesan', f_bg_history_d:'Gambar yang diproses disimpan otomatis di IndexedDB. Salin ulang atau unduh dari daftar thumbnail.',
+    f_bg_view:'Pratinjau 3 mode', f_bg_view_d:'Beralih antara mode bandingkan, hasil saja, dan asli untuk memeriksa akurasi mask.',
+    f_bg_i18n:'Dukungan multibahasa', f_bg_i18n_d:'Tersedia dalam Jepang, Inggris, Thai, Indonesia, dan Mandarin.',
   },
 
   zh: {
@@ -266,6 +322,17 @@ const I18N = {
     f_st_gantt:'连续动作图表（甘特图）', f_st_gantt_d:'生成甘特图，可视化整个工序的时间轴。',
     f_st_group:'分组、排序和撤销支持', f_st_group_d:'通过拖放排序，将相关动作分组。',
     f_st_export:'JSON保存和CSV ZIP输出', f_st_export_d:'以JSON格式保存和加载工序数据。',
+
+    navBg:        '背景去除',
+    titleBg:      'Product Photo Cleaner — 背景去除工具',
+    badgeBg:      '🖼️ 背景去除',
+    descBg:       '完全在浏览器内进行背景去除和蒙版修正，无需上传到服务器。AI模型在本地运行，自动抠出主体，支持透明PNG、白色、黑色、灰色背景输出。',
+    f_bg_ai:'AI自动背景去除', f_bg_ai_d:'在浏览器内运行 @imgly/background-removal 模型，图像数据不会发送到任何服务器。',
+    f_bg_mask:'手动蒙版修正', f_bg_mask_d:'通过绘制多边形添加或删除前景/背景区域，支持一键切换连通区域（岛）。',
+    f_bg_export:'4种背景输出', f_bg_export_d:'选择透明PNG、白色、黑色或检查灰色背景，然后复制或保存。',
+    f_bg_history:'处理历史管理', f_bg_history_d:'处理的图像自动保存到IndexedDB，可从缩略图列表一键重新复制或下载。',
+    f_bg_view:'3模式预览', f_bg_view_d:'在对比（原图+结果）、仅结果、原图三种模式间切换，边编辑边确认蒙版精度。',
+    f_bg_i18n:'多语言支持', f_bg_i18n_d:'支持日语、英语、泰语、印度尼西亚语、中文，适用于海外工厂的商品拍摄线。',
   },
 };
 
@@ -275,6 +342,7 @@ const TOOL_URLS = {
   inspection: { base: 'https://yhtko.github.io/inspection-marker/', langParam: true },
   calc:       { base: 'https://yhtko.github.io/ForgeKit/', langParam: true },
   st:         { base: 'https://yhtko.github.io/st-tool/', langParam: true, stTool: true },
+  bg:         { base: 'https://yhtko.github.io/background-remover/', langParam: true },
 };
 
 const SUPPORTED_LANGS = ['ja', 'en', 'th', 'id', 'zh'];
@@ -297,6 +365,7 @@ const sectionTitles = {
   inspection: () => t('titleInspect'),
   calc:       () => t('titleCalc'),
   st:         () => t('titleSt'),
+  bg:         () => t('titleBg'),
 };
 
 function activateSection(id) {
